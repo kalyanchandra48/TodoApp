@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "191013600140",
+    "firebase_url": "https://todoappelred-default-rtdb.firebaseio.com",
+    "project_id": "todoappelred",
+    "storage_bucket": "todoappelred.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191013600140:android:60cf87b4dda266f0d5f4a9",
+        "android_client_info": {
+          "package_name": "com.example.todo_app_elred"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191013600140-97f6mr2v0d7u7ggdlc8tpegkfd2tlhae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.todo_app_elred",
+            "certificate_hash": "2a5fe5b590fb53645732d6aeb3cb69324bb44871"
+          }
+        },
+        {
+          "client_id": "191013600140-3jj67nbnkumoogc5qbvslq86imusi4rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS4ue2vTAlTKDyxezGNuo_AMRAXdY_wjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191013600140-3jj67nbnkumoogc5qbvslq86imusi4rs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "191013600140-gf2mo2242cif36guu16q5v44srk09rin.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.todoAppElred"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
