@@ -42,15 +42,15 @@ dependencies:
   firebase_core: ^2.4.1
   provider: ^6.0.5
   flutter_animate: ^3.0.0
-  lottie: ^2.2.0
+
   video_player: ^2.5.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   hive_generator: ^2.0.0
-  flutter_svg: ^1.1.6
+ 
   uuid: ^3.0.7
   flutter_slidable: ^2.0.0
-  shimmer: ^2.0.0
+
   intl: ^0.17.0
 
  

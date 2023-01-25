@@ -6,7 +6,6 @@ import 'package:todo_app_elred/pages/home/home_page_components/loading_screen.da
 import 'package:todo_app_elred/pages/home/home_page_components/new_todo_page.dart';
 import 'package:todo_app_elred/pages/intro/todo_video_screen.dart';
 import 'package:todo_app_elred/pages/sign_in/sign_in_page.dart';
-
 import 'package:todo_app_elred/services/hive.dart';
 import 'package:todo_app_elred/services/navigator.dart';
 
@@ -65,15 +64,7 @@ class TodoApp extends StatelessWidget {
             },
           );
         }
-        if (settings.name == '/SignInpage') {
-          return PageRouteBuilder(
-            transitionDuration: const Duration(seconds: 3),
-            pageBuilder: (_, __, ___) => const SignInWithGooglePage(),
-            transitionsBuilder: (_, anim, __, child) {
-              return FadeTransition(opacity: anim, child: child);
-            },
-          );
-        }
+
         if (settings.name == '/TodoPage') {
           return PageRouteBuilder(
             transitionDuration: const Duration(seconds: 3),
