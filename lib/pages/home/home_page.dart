@@ -89,22 +89,9 @@ class HomeScreen extends StatelessWidget {
                           if (snapshot.hasData) {
                             //print(snapshot.data?.length);
 
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(left: 20, top: 10),
-                                  child: Text(
-                                    'INBOX',
-                                    style: AppFonts.inboxtext,
-                                  ),
-                                ),
-                                TaskWidget(
-                                  snapshot: snapshot,
-                                  index: index,
-                                ),
-                              ],
+                            return TaskWidget(
+                              snapshot: snapshot,
+                              index: index,
                             );
                           }
                           return const CupertinoActivityIndicator();
