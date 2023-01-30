@@ -138,9 +138,8 @@ class _AddNewTodoPageState extends State<AddNewTodoPage> {
                 child: Container(
                   margin: const EdgeInsets.only(top: 40),
                   height: 50,
-                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(5),
                     color: Colors.blue,
                   ),
                   child: Center(

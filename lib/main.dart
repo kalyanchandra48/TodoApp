@@ -57,7 +57,7 @@ class TodoApp extends StatelessWidget {
         }
         if (settings.name == '/Homepage') {
           return PageRouteBuilder(
-            transitionDuration: const Duration(milliseconds: 80),
+            transitionDuration: const Duration(milliseconds: 0),
             pageBuilder: (_, __, ___) => const Homepage(),
             transitionsBuilder: (_, anim, __, child) {
               return FadeTransition(opacity: anim, child: child);

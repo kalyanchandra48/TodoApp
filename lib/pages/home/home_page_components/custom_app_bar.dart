@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:todo_app_elred/styles/colors.dart';
 import 'package:todo_app_elred/styles/fonts.dart';
 
@@ -26,7 +25,11 @@ class CustomAppBar extends StatelessWidget {
           padding: const EdgeInsets.only(
             left: 7.0,
           ),
-          child: Text('Your Things', style: AppFonts.profiletext),
+          child: Text(
+            'Your Things',
+            style: AppFonts.profiletext,
+            textAlign: TextAlign.center,
+          ),
         ),
         background: Container(
           width: MediaQuery.of(context).size.width,

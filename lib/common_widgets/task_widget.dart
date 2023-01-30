@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:todo_app_elred/models/todo_data.dart';
@@ -75,30 +72,32 @@ class TaskWidget extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   CircleAvatar(
-                    radius: 27,
+                    radius: 38,
                     backgroundColor: Colors.grey.shade300,
                     child: CircleAvatar(
-                      radius: 26,
+                      radius: 36,
                       backgroundColor: Colors.white,
                       child: snapshot.data?[index].category == 'BUSINESS'
-                          ? const Icon(
+                          ? Icon(
                               Icons.business_center_outlined,
-                              size: 25,
+                              size: 32,
+                              color: AppColors.iconColor,
                             )
-                          : const Icon(
+                          : Icon(
                               Icons.person,
-                              size: 25,
+                              size: 32,
+                              color: AppColors.iconColor,
                             ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: const EdgeInsets.only(left: 18.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,6 +107,9 @@ class TaskWidget extends StatelessWidget {
                             Text(snapshot.data?[index].name ?? '',
                                 style: AppFonts.titleText),
                           ],
+                        ),
+                        const SizedBox(
+                          height: 07,
                         ),
                         Text(
                           snapshot.data?[index].description ?? '',
@@ -124,8 +126,11 @@ class TaskWidget extends StatelessWidget {
                           snapshot.data?[index].date.substring(0, 5) ?? '')),
                 ],
               ),
+              const SizedBox(
+                height: 10,
+              ),
               Divider(
-                thickness: 1.2,
+                thickness: 1.5,
                 color: Colors.grey.shade300,
               ),
             ],

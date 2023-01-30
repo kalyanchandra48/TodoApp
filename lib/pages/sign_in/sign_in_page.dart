@@ -21,13 +21,13 @@ class SignInWithGooglePage extends StatelessWidget {
                 const SnackBar(
                   backgroundColor: Colors.black,
                   duration: Duration(seconds: 3),
-                  content: Text('SiginIn Success'),
+                  content: Text('Sign-in Success'),
                 ),
               );
 
               FirebaseService.getUserDBData();
 
-              Future.delayed(const Duration(seconds: 3), () {
+              Future.delayed(const Duration(seconds: 2), () {
                 Navigator.pushReplacementNamed(context, '/Homepage');
               });
             } else {
@@ -35,7 +35,7 @@ class SignInWithGooglePage extends StatelessWidget {
                 const SnackBar(
                   backgroundColor: Colors.black,
                   duration: Duration(seconds: 6),
-                  content: Text('SiginIn Failed'),
+                  content: Text('Sign-in Failed'),
                 ),
               );
             }

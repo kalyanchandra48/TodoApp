@@ -54,6 +54,13 @@ class AppFonts {
     letterSpacing: 0,
     decoration: TextDecoration.none,
   );
+  static final inboxtext = getAppFont(
+    fontSize: 15,
+    fontWeight: FontWeight.bold,
+    color: const Color(0xffB8B8C2),
+    letterSpacing: 0,
+    decoration: TextDecoration.none,
+  );
   static final smalltitle = getAppFont(
     fontSize: 15,
     fontWeight: FontWeight.normal,
